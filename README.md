@@ -3,7 +3,7 @@
 - Calculating primes is one of the most computationally intensive task, and an important component in computer security.  
 - This repo aims at calculating prime numbers, in a certain range, using multithreading concepts in NodeJS.  
 - Basic sieve method is used to collect prime numbers. The range is divided between worker-threads here.  
-- And the number of worker threads spawned is equal to the number of cores, to maximise output. If more spawned need to switch between threads, which takes time, if more spawned, cores underutilized.
+- And the number of worker threads spawned is equal to the number of cores, to maximise output. If more spawned need to switch between threads, which takes time, if less spawned, cores underutilized.
 
 ## Worker Threads
 - Javascript can handle I/O events easily, owing to EventLoop. Hence, Node can handle multiple HTTP requests pretty seamlessly.  
